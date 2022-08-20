@@ -1,0 +1,14 @@
+ <div class="aboutSection1">
+            <div class="aboutImage">
+              <img src="../Assets/Images/aboutImg.jpg" alt=""  class="trial"/>
+            </div>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hi, I'm Yash, a web developer
+              from Mumbai, India. Currently pursuing a bachelor's degree focused
+              in Computer Application from Shailendra Education Society's
+              College of Arts Commerce and Science. I'm young and passionate
+              about my work. As a web developer, I believe good development is
+              about having knowledge about frontend and backend and how those
+              two platforms connect.Addicted to music, visual arts, and games.
+            </p>
+          </div>

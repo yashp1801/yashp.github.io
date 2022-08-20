@@ -1,0 +1,186 @@
+@font-face {
+  font-family: main;
+  src: url(../Assets/font/ApfelGrotezk-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: main;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__button {
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000;
+  border: 0;
+  cursor: pointer;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  margin: 20px;
+  outline: none;
+  animation-duration: 300ms;
+  animation-timing-function: ease;
+}
+
+.header__button[data-open="true"] {
+  background-color: #fff;
+  animation-name: scale;
+}
+
+.header__button[data-open="false"] {
+  transition: background-color 250ms linear;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(100%);
+  }
+}
+
+.header__nav {
+  background-color: #000;
+  position: fixed;
+  overflow: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  visibility: hidden;
+  clip-path: circle(var(--radius) at calc(100% - 55px) 47px);
+}
+
+.header__nav[data-active="true"] {
+  visibility: visible;
+}
+
+.header__menu {
+  padding: 0;
+  margin: 0;
+}
+
+.header__menu > .header__menu-item {
+  font-size: 10rem;
+}
+
+.header__menu > .header__menu-item:not(:last-of-type) {
+  margin-bottom: 0em;
+}
+
+.header__menu-item a {
+  letter-spacing: -4px;
+  font-weight: 300 !important;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.1s ease-out;
+}
+.header__menu-item a:hover {
+  color: rgb(61, 61, 61);
+  transition: 0.1s ease-in;
+}
+/* =============================== */
+.connet {
+  height: max-content;
+  width: 100%;
+}
+.connect-container {
+  display: flex;
+}
+.left-side {
+  height: 100vh;
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 3rem 5rem;
+  background-color: #fff;
+  color: #141414;
+}
+
+.connect-header {
+  font-size: 9rem;
+  margin-bottom: 2rem;
+}
+.left-side p {
+  font-size: 3rem;
+}
+
+.connect-form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.connect-form input {
+  background-color: rgb(227, 224, 224);
+  outline: none;
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #141414;
+  margin-top: 1rem;
+}
+.messageInput {
+  background-color: rgb(227, 224, 224);
+  outline: none;
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #141414;
+  margin-top: 1rem;
+  border: 1px solid #fff;
+}
+
+.submitBtn {
+  width: 25%;
+  padding: 0.5rem 2rem;
+  font-size: 1.1rem;
+  align-self: flex-end;
+  margin-top: 1rem;
+  color: #141414;
+  border: 1px solid #141414;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  text-decoration: none;
+  text-align: center;
+}
+.submitBtn:hover {
+  color: #fff;
+  background-color: #141414;
+  transition: 0.1s ease-in;
+}
+
+.right-side {
+  height: 100vh;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.right-side img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}

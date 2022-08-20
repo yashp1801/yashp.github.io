@@ -1,0 +1,85 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./contact.css" />
+    <script src="https://cdn.jsdelivr.net/npm/circular-revealer@0.0.8/dist/index.iife.js"></script>
+  </head>
+  <body>
+    
+    <div class="connect" >
+     
+      <header>
+        <div">
+          <button class="header__button nav-btn-js" type="button"></button>
+          <nav class="header__nav nav-js"  >
+            <ul class="header__menu">
+              <li class="header__menu-item">
+                <a href="../About/about.html">About</a>
+              </li>
+              <li class="header__menu-item"><a href="../Work/work.html">Work</a></li>
+              <li class="header__menu-item">
+                <a href="../Resume/resume.html">Resume</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="# " style="color: crimson">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="connect-container"  >
+        <div class="left-side" >
+          <h1 class="connect-header">Connect.</h1>
+          <p class="animate-this">
+            Feel free to contact <br />
+            drop a line below.
+          </p>
+          <form
+            action="https://formsubmit.co/yashpatil4202@gmail.com"
+            method="POST"
+            class="connect-form"
+            autocomplete="off"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://https://yashp1801.github.io/formsubmit-demo/thanksPg.html"
+            />
+            <div class="from-div">
+              <input type="text" name="name" placeholder="name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="your email"
+                required
+              />
+            </div>
+            <input type="text" name="subject" placeholder="subject" />
+            <textarea
+              name="message"
+              placeholder="message"
+              rows="10"
+              class="messageInput"
+            ></textarea>
+            <a href="../Contact/thanksPg.html" class="submitBtn">send</a>
+            <!-- <button type="submit" class="submitBtn">send</button> -->
+          </form>
+        </div>
+        <div class="right-side">
+          <img
+            src="../Assets/Images/pexels-rishabh-parange-11327644.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <script src="./contact.js" defer></script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,168 @@
+@font-face {
+  font-family: main;
+  src: url(../Assets/font/ApfelGrotezk-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: main;
+}
+
+html,
+body {
+  background: #0c090d;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.column {
+  width: 50%;
+  height: 100vh;
+}
+
+.left {
+  position: relative;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fdfffc;
+  padding: 20px;
+}
+.title {
+  position: relative;
+  z-index: 5;
+}
+.title p {
+  width: max-content;
+  position: relative;
+}
+.title p::before {
+  content: "";
+  background-color: crimson;
+  height: 5px;
+  width: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  transition: width 0.25s ease-out;
+}
+
+.title p:hover a {
+  color: crimson;
+  transition:  0.1s ease-in;
+
+}
+.title p a {
+  font-size: 9rem;
+  text-transform: capitalize;
+  color: #0c090d;
+  text-decoration: none;
+  transition:  0.5s ease-out;
+
+}
+.title p:hover::before {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.images {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 5;
+}
+.img {
+  height: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.home_content h1 {
+  color: #4838bc;
+  font-size: 7rem;
+}
+
+.header {
+  color: #fdfffc;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.header h1 {
+  position: relative;
+  box-sizing: content-box;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+@media (min-width: 900px) {
+  .container {
+    display: flex;
+  }
+
+  .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .column {
+    width: 100%;
+  }
+
+  .img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .header {
+    font-size: 20px;
+    padding: 80px 0;
+  }
+}
+
+.titles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.preloader h1 {
+  font-weight: 500;
+  font-size: 9rem;
+  color: #fdfffc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: capitalize;
+}
+
+.home_content p {
+  color: rgb(147, 143, 143);
+  font-size: 1.7rem;
+}
